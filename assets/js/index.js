@@ -1,31 +1,35 @@
-const bookArr = [];
-/* eslint-disable */
-function input() {
-  const name = document.getElementById('name').value;
-  const author = document.getElementById('author').value;
-  bookArr.push({ bookName: name, author: author });
-  localStorage.setItem('books', JSON.stringify(bookArr));
-  location.reload();
+class awesomBooks {
+  bookArr = [];
+  input () {
+    const name = document.getElementById('name').value;
+    const author = document.getElementById('author').value;
+    this.bookArr.push({ bookName: name, author: author });
+    localStorage.setItem('books', JSON.stringify(this.bookArr));
+    location.reload();
+  };
 }
+let newAwesomBook = new awesomBooks();
 
 function display() {
   let html = '<div>';
+  html += '<table class="center">'
   const storedBook = JSON.parse(localStorage.getItem('books'));
   for (let i = 0; i < storedBook.length; i += 1) {
-    bookArr.push({ bookName: storedBook[i].bookName, author: storedBook[i].author });
-    html += '<p>Book Name: ' + bookArr[i].bookName + ' <br> Author Name : ' + bookArr[i].author + '</p>';
     const book = i;
-    html += '<button onclick="deleteNote(' + book + ')"> Remove </button>';
-    html += '<br>';
-    html += '<hr class ="line">';
-    html += '<br>';
+
+    newAwesomBook.bookArr.push({ bookName: storedBook[i].bookName, author: storedBook[i].author });
+    html += '<tr>'
+    html += '<td> "' + newAwesomBook.bookArr[i].bookName + '" by ' + newAwesomBook.bookArr[i].author + '</td>';
+    html += '<td class="test"><button onclick="deleteNote(' + book + ')"> Remove </button> </td>';
+    html += '</tr>'
     document.getElementById('data').innerHTML = html;
   }
+  html += '</table>'
 }
 
 function deleteNote(i) {
-  bookArr.splice(i, 1);
-  localStorage.setItem('books', JSON.stringify(bookArr));
+  newAwesomBook.bookArr.splice(i, 1);
+  localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
   location.reload();
 }
 

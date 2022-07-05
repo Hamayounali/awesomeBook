@@ -1,4 +1,36 @@
 .line {
-  width: 200px;
-  float: left;
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+}
+
+table {
+  border: 1px solid #dddddd;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  width: 300px;
+}
+td.test {
+  text-align: right;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inp {
+  margin: 7px; 
+  padding:5px;
 }
