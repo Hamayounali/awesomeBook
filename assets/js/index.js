@@ -1,3 +1,4 @@
+/* eslint-disable */
 class awesomBooks {
   bookArr = [];
   input () {
