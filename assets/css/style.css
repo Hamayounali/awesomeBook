@@ -23,7 +23,8 @@ td.test {
   text-align: right;
 }
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: lightblue;
+  color: black;
 }
 .center {
   margin-left: auto;
