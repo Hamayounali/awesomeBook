@@ -2,8 +2,7 @@
 Online book library 
 
 ## Awesome books screen shot
-
-(https://user-images.githubusercontent.com/101576088/177366459-3eff3648-a5ea-4992-8961-8935054a63f5.PNG)
+<img width="400" alt="Capture" src="https://user-images.githubusercontent.com/22744775/177372985-cc7e7589-23b2-4bfa-a60e-f2d2b40c98d8.PNG">
 
 ## Page Link 
 https://hamayounali.github.io/KabulKia/
