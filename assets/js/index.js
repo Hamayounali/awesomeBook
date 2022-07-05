@@ -11,7 +11,7 @@ function input() {
 function display() {
   let html = '<div>';
   const storedBook = JSON.parse(localStorage.getItem('books'));
-  for (let i = 0; i < storedBook.length; i += 1 ){
+  for (let i = 0; i < storedBook.length; i += 1) {
     bookArr.push({ bookName: storedBook[i].bookName, author: storedBook[i].author });
     html += '<p>Book Name: ' + bookArr[i].bookName + ' <br> Author Name : ' + bookArr[i].author + '</p>';
     const book = i;
