@@ -3,7 +3,7 @@ Online book library
 
 ## Awesome books screen shot
 
-Comming soom 
+
 
 ## Page Link 
 https://hamayounali.github.io/KabulKia/
@@ -29,6 +29,13 @@ Run the live server or open index.html with your browser
 
 • Twitter: @hamayounali6
 
+# contributer
+Mehria Rahmani
+Github: Mehria-Rahmani
+Twitter: mehria-rahmani
+
+# contributer
+Anas
 
 # Show your support
 Give a ⭐️ if you like this project!
