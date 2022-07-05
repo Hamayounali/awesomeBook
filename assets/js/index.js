@@ -1,5 +1,5 @@
 const bookArr = [];
-
+/* eslint-disable */
 function input() {
   const name = document.getElementById('name').value;
   const author = document.getElementById('author').value;
