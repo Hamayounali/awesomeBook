@@ -1,5 +1,4 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable max-classes-per-file */
+/* eslint-disable */
 class awesomBooks {
   bookArr = [];
   input () {
