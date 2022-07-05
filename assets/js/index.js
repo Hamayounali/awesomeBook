@@ -30,6 +30,11 @@ function display() {
 }
 
 //remove a book
+function deleteNote(i) {
+  newAwesomBook.bookArr.splice(i, 1);
+  localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
+  location.reload();
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
