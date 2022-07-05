@@ -27,11 +27,8 @@ function display() {
   html += '</table>'
 }
 
-function deleteNote(i) {
-  newAwesomBook.bookArr.splice(i, 1);
-  localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
-  location.reload();
-}
+//remove a book
+
 
 document.addEventListener('DOMContentLoaded', () => {
   display();
