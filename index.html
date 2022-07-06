@@ -7,19 +7,65 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/index.js"></script>
 </head>
-<body style="text-align: center;">
-<h2>All Awesome Books</h2>
-<div id="data"> </div>
-<br>
-<hr class ="line">
+<style>
+    @font-face {
+		font-family: 'inter'; 
+		src: url("assets/fonts/Inter-Regular.ttf");
+	}
+</style>
+<body>
+    <div class="menu">
+        <div class="logo">
+            Awesome Books
+            <span class="button">
+                <button class="menuLinks" onclick="booklist()">Book List</button> 
+                <button class="menuLinks" onclick="addBook()">Add New</button>
+                <button class="menuLinks" onclick="contact()">Contacts</button>
+            </span>
+        </div> 
+    </div>
+    <div class="main">
+        <div class="date">
+            <script>
+                document.write(new Date());
+             </script>
+        </div>
+        <div class="dispalybooks" id="booklist">
+            <h2 class="bookList">All Awesome Books</h2>
+            <div id="data"> </div>
+            <br>
+        </div>
+       
+        <div class="addBook" id="addBook">
+            <h2 class="addNewBook">Add a new book</h2>
+            <form action="">
+                <input type="text" id="name" placeholder="Title" class="inp">
+                <br>
+                <input type="text" id="author" placeholder="Author" class="inp">
+            </form>
+            <br>
+            <button onclick="newAwesomBook.input()" class="btn"> Add</button>
+        </div>
 
-<h2>Add a new book</h2>
-<form action="">
-    <input type="text" id="name" placeholder="Title" class="inp">
-    <br>
-    <input type="text" id="author" placeholder="Author" class="inp">
-</form>
-<br>
-<button onclick="newAwesomBook.input()"> Add</button>
+        <div class="contacts" id="contacts">
+            <h2 class="contactTitle" > Contacts information</h2>
+            <p>Do have any question or you just want to say "hello",
+            you can reach out to us.
+            </p>
+            <ul>
+                <li><b> Main Offic Address:</b> Chahar Rahe Pul-e Surkh, Karte 3, Kabul, Afghanistan.</li>
+                <li><b> Email :</b> Info@awesomebooks.com </li>
+                <li><b> Webiste</b> www.awesomeooks.com</li>
+                <li><b>Phone</b> +93 799 4444 72</li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <div class="copyright">
+            Copyright all rights reserved.
+        </div>
+    </div>
 </body>
 </html>
