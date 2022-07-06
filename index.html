@@ -4,8 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Awesome Books</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js"></script>
 </head>
-<body>
-<h1> Awesome Books</h1>
+<body style="text-align: center;">
+<h2>All Awesome Books</h2>
+<div id="data"> </div>
+<br>
+<hr class ="line">
+
+<h2>Add a new book</h2>
+<form action="">
+    <input type="text" id="name" placeholder="Title" class="inp">
+    <br>
+    <input type="text" id="author" placeholder="Author" class="inp">
+</form>
+<br>
+<button onclick="newAwesomBook.input()"> Add</button>
 </body>
 </html>
