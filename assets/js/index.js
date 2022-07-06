@@ -16,12 +16,10 @@ function display() {
   html += '<table class="center">'
   const storedBook = JSON.parse(localStorage.getItem('books'));
   for (let i = 0; i < storedBook.length; i += 1) {
-    const book = i;
-
     newAwesomBook.bookArr.push({ bookName: storedBook[i].bookName, author: storedBook[i].author });
     html += '<tr>'
     html += '<td> "' + newAwesomBook.bookArr[i].bookName + '" by ' + newAwesomBook.bookArr[i].author + '</td>';
-    html += '<td class="test"><button onclick="deleteNote(' + book + ')"> Remove </button> </td>';
+    html += '<td class="test"><button onclick="deleteNote(' + i + ')"> Remove </button> </td>';
     html += '</tr>'
     document.getElementById('data').innerHTML = html;
   }
@@ -35,7 +33,34 @@ function deleteNote(i) {
   location.reload();
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
   display();
 });
+
+
+function contact() {
+  const contact = document.getElementById("contacts");
+  const bookList = document.getElementById("booklist");
+  const addBook = document.getElementById("addBook");
+  contact.style.display = "block";
+  bookList.style.display = "none";
+  addBook.style.display = "none";
+}
+
+function addBook() {
+  const contact = document.getElementById("contacts");
+  const bookList = document.getElementById("booklist");
+  const addBook = document.getElementById("addBook");
+  contact.style.display = "none";
+  bookList.style.display = "none";
+  addBook.style.display = "block";
+}
+
+function booklist() {
+  const contact = document.getElementById("contacts");
+  const bookList = document.getElementById("booklist");
+  const addBook = document.getElementById("addBook");
+  contact.style.display = "none";
+  bookList.style.display = "block";
+  addBook.style.display = "none";
+}

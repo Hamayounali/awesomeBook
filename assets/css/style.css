@@ -8,7 +8,7 @@ table {
   border: 1px solid #ddd;
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 40%;
+  width: 60%;
 }
 
 td,
@@ -18,7 +18,7 @@ th {
 }
 
 td {
-  width: 300px;
+  width: 500px;
 }
 
 td.test {
@@ -26,7 +26,7 @@ td.test {
 }
 
 tr:nth-child(even) {
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -37,5 +37,87 @@ tr:nth-child(even) {
 
 .inp {
   margin: 7px;
-  padding: 5px;
+  padding: 10px;
+  width: 50%;
+}
+
+.btn {
+  padding: 10px;
+  width: 100px;
+
+}
+
+.main {
+  text-align: center;
+  min-height: 455px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(243, 242, 242);
+}
+
+.menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(149, 149, 250); 
+  height: 57px; 
+  border-radius: 5px;
+}
+
+.logo {
+  text-align: left;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'inter', sans-serif;
+  color: white;
+}
+
+.copyright {
+  text-align: left;
+  font-size: 18px;
+  padding: 15px;
+  font-family: 'inter', sans-serif;
+}
+
+.footer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(149, 149, 250); 
+  height: 50px; 
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'inter', sans-serif;
+}
+
+#contacts {
+  display: none;
+}
+
+#addBook {
+  display: none;
+}
+
+#booklist {
+  display: block;
+}
+
+.addNewBook {
+  padding-top: 50px;
+}
+
+.contactTitle {
+  padding-top: 50px;
+}
+
+.bookList {
+  padding-top: 20px;
+}
+
+.menuLinks {
+  padding: 8px;
+  margin: auto;
 }
