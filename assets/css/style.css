@@ -121,3 +121,9 @@ h2 {
   padding: 8px;
   margin: auto;
 }
+
+.contacts {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
