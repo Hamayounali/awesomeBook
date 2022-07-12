@@ -1,7 +1,7 @@
 /* eslint-disable */
 class awesomBooks {
   bookArr = [];
-  input () {
+  input = () => {
     const name = document.getElementById('name').value;
     const author = document.getElementById('author').value;
     this.bookArr.push({ bookName: name, author: author });
@@ -10,8 +10,10 @@ class awesomBooks {
   };
 }
 let newAwesomBook = new awesomBooks();
+document.querySelector('#newBook').addEventListener('click', newAwesomBook.input)
 
-function display() {
+//Display the books
+let display = () => {
   let html = '<div>';
   html += '<table class="center">'
   const storedBook = JSON.parse(localStorage.getItem('books'));
@@ -27,7 +29,7 @@ function display() {
 }
 
 //remove a book
-function deleteNote(i) {
+window.deleteNote = (i) => {
   newAwesomBook.bookArr.splice(i, 1);
   localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
   location.reload();
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function contact() {
+let contact = () => {
   const contact = document.getElementById("contacts");
   const bookList = document.getElementById("booklist");
   const addBook = document.getElementById("addBook");
@@ -46,8 +48,9 @@ function contact() {
   bookList.style.display = "none";
   addBook.style.display = "none";
 }
+document.querySelector('#contactUs').addEventListener('click', contact)
 
-function addBook() {
+let addBook = () => {
   const contact = document.getElementById("contacts");
   const bookList = document.getElementById("booklist");
   const addBook = document.getElementById("addBook");
@@ -55,8 +58,9 @@ function addBook() {
   bookList.style.display = "none";
   addBook.style.display = "block";
 }
+document.querySelector('#addBooks').addEventListener('click', addBook)
 
-function booklist() {
+let booklist = () => {
   const contact = document.getElementById("contacts");
   const bookList = document.getElementById("booklist");
   const addBook = document.getElementById("addBook");
@@ -64,5 +68,6 @@ function booklist() {
   bookList.style.display = "block";
   addBook.style.display = "none";
 }
+document.querySelector('#bookList').addEventListener('click', booklist)
 
 
