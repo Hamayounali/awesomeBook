@@ -1,4 +1,3 @@
-/* eslint-disable */
 export const addBook = () => {
   const contact = document.getElementById('contacts');
   const bookList = document.getElementById('booklist');
