@@ -1,9 +1,9 @@
-/* eslint-disable */
-export let contact = () => {
-  const contact = document.getElementById('contacts');
+// eslint-disable-next-line import/prefer-default-export
+export const Contact = () => {
+  const contact2 = document.getElementById('contacts');
   const bookList = document.getElementById('booklist');
   const addBook = document.getElementById('addBook');
-  contact.style.display = 'block';
+  contact2.style.display = 'block';
   bookList.style.display = 'none';
   addBook.style.display = 'none';
-}
+};
