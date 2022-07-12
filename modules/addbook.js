@@ -1,8 +1,9 @@
+// eslint-disable-next-line import/prefer-default-export
 export const addBook = () => {
   const contact = document.getElementById('contacts');
   const bookList = document.getElementById('booklist');
-  const addBook = document.getElementById('addBook');
+  const addBook2 = document.getElementById('addBook');
   contact.style.display = 'none';
   bookList.style.display = 'none';
-  addBook.style.display = 'block';
-}
+  addBook2.style.display = 'block';
+};
