@@ -1,4 +1,4 @@
-export let deleteNote = (i) => {
+export const deleteNote = (i) => {
   newAwesomBook.bookArr.splice(i, 1);
   localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
   location.reload();
