@@ -1,11 +1,10 @@
-/* eslint-disable import/extensions */
-import { AwesomBooks } from './awesomebook.js';
+import AwesomBooks from './awesomebook.js';
 
-import { Contact } from './contact.js';
+import Contact from './contact.js';
 
-import { addBook } from './addbook.js';
+import addBook from './addbook.js';
 
-import { booklist } from './booklist.js';
+import booklist from './booklist.js';
 
 const newAwesomBook = new AwesomBooks();
 document.querySelector('#newBook').addEventListener('click', newAwesomBook.input);
@@ -34,14 +33,13 @@ const display = () => {
 window.deleteNote = (i) => {
   newAwesomBook.bookArr.splice(i, 1);
   localStorage.setItem('books', JSON.stringify(newAwesomBook.bookArr));
-  // eslint-disable-next-line no-restricted-globals
-  location.reload();
+  window.location.reload();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   display();
 });
 
-// undefined Luson
+// undefined Luxon
 // eslint-disable-next-line no-undef
 setInterval(() => { document.getElementById('date').innerHTML = luxon.DateTime.now(); }, 1000);

@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/prefer-default-export
-export class AwesomBooks {
+class AwesomBooks {
   bookArr = [];
 
   input = () => {
@@ -7,7 +6,8 @@ export class AwesomBooks {
     const author = document.getElementById('author').value;
     this.bookArr.push({ bookName: name, author });
     localStorage.setItem('books', JSON.stringify(this.bookArr));
-    // eslint-disable-next-line no-restricted-globals
-    location.reload();
+    window.location.reload();
   };
 }
+
+export default AwesomBooks;
