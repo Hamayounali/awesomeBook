@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Awesome Books</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/index.js"></script>
+    <script type="module" src="./modules/main.js"></script>
+    <script src="./modules/luxon.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script> -->
 </head>
 <style>
     @font-face {
@@ -18,21 +20,20 @@
         <div class="logo">
             Awesome Books
             <span class="button">
-                <button class="menuLinks" onclick="booklist()">Book List</button> 
-                <button class="menuLinks" onclick="addBook()">Add New</button>
-                <button class="menuLinks" onclick="contact()">Contacts</button>
+                <button class="menuLinks" id="bookList">Book List</button> 
+                <button class="menuLinks" id="addBooks"> Add New</button>
+                <button class="menuLinks" id="contactUs">Contacts</button>
             </span>
         </div> 
     </div>
     <div class="main">
-        <div class="date">
-            <script>
-                document.write(new Date());
-             </script>
+        
+        <div class="date" id="date">
         </div>
         <div class="dispalybooks" id="booklist">
             <h2 class="bookList">All Awesome Books</h2>
             <div id="data"> </div>
+            <!-- <button id="abcd"> Remove </button> -->
             <br>
         </div>
        
@@ -44,7 +45,7 @@
                 <input type="text" id="author" placeholder="Author" class="inp">
             </form>
             <br>
-            <button onclick="newAwesomBook.input()" class="btn"> Add</button>
+            <button id="newBook" class="btn"> Add book</button>
         </div>
 
         <div class="contacts" id="contacts">
